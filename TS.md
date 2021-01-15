@@ -6,7 +6,7 @@
 3. [Operator](#operator)
 4. [Decision Making](#decision)
 5. [Loops](#loop)
-6. [Funstions](#function)
+6. [Functions](#function)
 7. [Classes](#class)
 8. [Objects](#object)
 9. [Others](#other)
@@ -52,14 +52,14 @@
 
 - The Any type: is the super type. Using when do not wanna check type of variable or not sure about variable's type.
 - Built-in types: The type was provided by TypeScript
-    | Data type      | Keyword     | Description |
-    | ---------------| ----------- |----------- |
-    | Number         | number       |TiDouble precision 64-bit floating point values. It can be used to represent both, integers and fractions.tle       |
-    | String      | string        |Represents a sequence of Unicode characters        |
-    | Boolean      | boolean        |Represents logical values, true and false        |
+    | Data type      | Keyword     | Description | Example
+    | ---------------| ----------- |----------- |----------- |
+    | Number         | number       |Double precision 64-bit floating point values. It can be used to represent both, integers and fractions.tle       | let numRecords:number = 2;<br>let pi:number = 3.14;
+    | String      | string        |Represents a sequence of Unicode characters        | let myName:string = 'Justin Le';
+    | Boolean      | boolean        |Represents logical values, true and false        | let isValid:boolean = true;
     | Void*      | void        |Used on function return types to represent non-returning functions        |
-    | Null      | null        |Represents an intentional absence of an object value.        |
-    | Undefined      | undefined        |Denotes value given to all uninitialized variables        |
+    | Null      | null        |Represents an intentional absence of an object value.        | let varNull = null;
+    | Undefined      | undefined        |Denotes value given to all uninitialized variables        | let varUndefined;
 - User-defined Types
     + Complex data type but powerful
     + The variables declare with User-defined Types is Refs variables
@@ -111,9 +111,10 @@
             });
             ```
         ###### b. Tuples - [Refs](https://www.tutorialspoint.com/typescript/typescript_tuples.htm)
+        At times, there might be a need to store a collection of values of varied types. Arrays will not serve this purpose. TypeScript gives us a data type called tuple that helps to achieve such a purpose.
 
         ###### c. Interfaces - [Refs](https://www.tutorialspoint.com/typescript/typescript_interfaces.htm)
-        - An interface is a syntactical contract that an entity should conform to
+        - An interface is a syntactical contract that an entity should confirm to
         - Providing a standard structure
         - Interfaces contain only the declaration of the members.
         - May contain string, number, function...
@@ -211,6 +212,7 @@
     | && (And)         | The operator returns true only if all the expressions specified return true       |   |
     | || (OR)         | The operator returns true if at least one of the expressions specified return true       |   |
     | ! (NOT)         | The operator returns the inverse of the expression’s result. For E.g.: !(>5) returns false       |   |
+    | &#124;&#124; (OR)         | The operator returns true if at least one of the expressions specified return true      |   |
 - Assignment Operators
     | Operator      | Description     | Example |
     | ---------------| ----------- |----------- |
@@ -235,7 +237,7 @@
     - Eg:
         ```
         let numYears:number = 12; 
-        if (num % 2==0) { 
+        if (num % 2 == 0) { 
             console.log("Even"); 
         } else {
             console.log("Odd"); 

@@ -210,7 +210,6 @@
     | Operator      | Description     | Example |
     | ---------------| ----------- |----------- |
     | && (And)         | The operator returns true only if all the expressions specified return true       |   |
-    | || (OR)         | The operator returns true if at least one of the expressions specified return true       |   |
     | ! (NOT)         | The operator returns the inverse of the expression’s result. For E.g.: !(>5) returns false       |   |
     | &#124;&#124; (OR)         | The operator returns true if at least one of the expressions specified return true      |   |
 - Assignment Operators
